@@ -83,7 +83,7 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('Server started on port 3000');
 });
-
+````
 ##Explain middleware in Express.js.
 
 Answer: Middleware in Express.js are functions that have access to the request and response objects, and the next function. They can perform tasks like parsing request data, authentication, logging, error handling, etc. Middleware functions can be defined using app.use() or specific HTTP method functions (app.get(), app.post(), etc.). Middleware functions can modify the request and response objects or end the request-response cycle. To proceed to the next middleware or route handler, middleware functions should call next().
@@ -118,8 +118,8 @@ app.post('/submit', (req, res) => {
   // Process the form data here
   res.send('Form data received.');
 });
-````
 
 app.listen(3000, () => {
   console.log('Server started on port 3000');
 });
+````
